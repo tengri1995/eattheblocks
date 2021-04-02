@@ -61,7 +61,7 @@ factory.on('PairCreated', async (token0, token1, pairAddress) => {
     Buying new token
     =================
     tokenIn: ${amountIn.toString()} ${tokenIn} (WETH)
-    tokenOut: ${amounOutMin.toString()} ${tokenOut}
+    tokenOut: ${amountOutMin.toString()} ${tokenOut}
   `);
   const tx = await router.swapExactTokensForTokens(
     amountIn,
